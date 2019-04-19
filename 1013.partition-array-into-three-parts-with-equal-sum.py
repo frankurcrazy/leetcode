@@ -66,13 +66,13 @@ class Solution(object):
         length = len(A)
         avg = sum(A)/3
 
-        summ = 0
+        s = 0
         groups = 0
 
         for a in A:
-            summ += a
-            if summ == avg:
+            s += a
+            if s == avg:
                 groups += 1
-                summ = 0
+                s = 0
 
         return groups == 3
